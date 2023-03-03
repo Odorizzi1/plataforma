@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@vite-pwa/nuxt": "^0.0.6",
+    "autoprefixer": "^10.4.13",
+    "nuxt": "^3.2.3",
+    "nuxt-lodash": "^2.4.1",
+    "nuxt-purgecss": "^2.0.0",
+    "nuxt-typed-router": "^3.0.3",
+    "nuxt-viewport": "^2.0.3",
+    "postcss": "^8.4.21",
+    "sass": "^1.58.3",
+    "sass-loader": "^13.2.0",
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "@nuxt/image-edge": "^1.0.0-27954023.4cee565",
+    "@nuxtjs/apollo": "^5.0.0-alpha.5",
+    "@nuxtjs/google-fonts": "^2.0.0",
+    "@nuxtjs/style-resources": "^1.2.1",
+    "@nuxtjs/tailwindcss": "^6.4.1",
+    "@tailwindcss/forms": "^0.5.3",
+    "magic-regexp": "^0.6.3"
+  }
+}

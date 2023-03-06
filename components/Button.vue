@@ -7,7 +7,7 @@
 <script setup lang="ts">
 type Style = "primary" | "secondary";
 
-const props = defineProps<{ type: Style }>();
+defineProps<{ type: Style }>();
 
 function btnClass(style: Style): string {
   return "btn".concat("-", style);

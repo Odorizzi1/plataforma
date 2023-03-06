@@ -10,10 +10,17 @@
   <p v-if="size == 'sm'" :class="getTextStyle(size, color)"><slot /></p>
 </template>
 
-<script lang="ts">
-const sizes = ["h1", "h2", "h3", "h4", "h5", "btn", "lg", "md", "sm"];
+<script setup lang="ts">
+type Size = "h1" | "h2" | "h3" | "h4" | "h5" | "btn" | "lg" | "md" | "sm";
 
-function getTextStyle(size: string, color: string): string {
+interface Props {
+  size: Size;
+  color: string;
+}
+
+withDefaults(defineProps<Props>(), { color: "black-80" });
+
+function getTextStyle(size: Size, color: string): string {
   const textColor = "text".concat("-", color);
 
   const textStyles = {
@@ -30,25 +37,4 @@ function getTextStyle(size: string, color: string): string {
 
   return textColor.concat(" ", textStyles[size]);
 }
-
-export default defineComponent({
-  props: {
-    size: {
-      type: String,
-      required: true,
-      validator(value) {
-        return sizes.includes(value);
-      },
-    },
-    color: {
-      type: String,
-      default(_prop) {
-        return "black-80";
-      },
-    },
-  },
-  methods: {
-    getTextStyle,
-  },
-});
 </script>

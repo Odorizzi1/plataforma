@@ -15,12 +15,12 @@ type Size = "h1" | "h2" | "h3" | "h4" | "h5" | "btn" | "lg" | "md" | "sm";
 
 interface Props {
   size: Size;
-  color: string;
+  color?: string;
 }
 
 defineProps<Props>();
 
-function getTextStyle(size: Size, color: string): string {
+function getTextStyle(size: Size, color?: string): string {
   const textStyles = {
     h1: "text-3xl leading-10 font-bold",
     h2: "text-2xl leading-9 font-bold",
@@ -32,6 +32,8 @@ function getTextStyle(size: Size, color: string): string {
     md: "text-sm leading-5 font-regular",
     sm: "text-xs leading-4 font-regular",
   };
+
+  if (!color) return textStyles[size];
 
   return color.concat(" ", textStyles[size]);
 }

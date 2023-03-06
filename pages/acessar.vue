@@ -1,0 +1,94 @@
+<template>
+  <main class="fish-bg h-full">
+    <Form
+      @submit.prevent="handleSubmit"
+      @invalid-submit="handleError"
+      :validation-schema="schema"
+      class="login-form whitespace-nowrap"
+    >
+      <Text size="h3" color="text-black-80">
+        Faça login para acessar a plataforma
+      </Text>
+
+      <fieldset class="login-fieldset">
+        <label><Text size="h4" color="text-black-80">CPF</Text></label>
+        <Input type="text" name="cpf" v-maska data-maska="###.###.###-##" />
+      </fieldset>
+
+      <fieldset class="login-fieldset">
+        <label><Text size="h4" color="text-black-80">Senha</Text></label>
+        <Input type="password" name="password" />
+      </fieldset>
+
+      <Button type="primary" submit>
+        <Text size="btn">Acessar</Text>
+      </Button>
+    </Form>
+  </main>
+</template>
+
+<script setup lang="ts">
+import { Form } from "vee-validate";
+import { toFormValidator } from "@vee-validate/zod";
+import { vMaska } from "maska";
+import { z } from "zod";
+
+const schema = toFormValidator(
+  z.object({
+    cpf: z.string().nonempty(),
+    password: z.string().nonempty().min(8),
+  })
+);
+
+function handleSubmit(values) {
+  const { cpf, password } = values;
+}
+
+function handleError(e) {}
+</script>
+
+<style lang="scss">
+main {
+  @apply flex justify-center items-center;
+}
+
+.fish-bg {
+  background-image: url("/images/fish_background.svg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.login-form {
+  @apply flex flex-col;
+  @apply justify-between items-center;
+  @apply bg-white-100;
+
+  height: 34.375rem;
+  width: 37.5rem;
+  border-radius: 24px;
+  padding: 6.25rem;
+
+  h3 {
+    width: 27.25rem;
+  }
+
+  input {
+    @apply w-full;
+    height: 3rem;
+    margin-top: 0.75rem;
+  }
+
+  button {
+    margin-top: 2rem;
+    width: 27.25rem;
+    height: 3.5rem;
+  }
+}
+
+.login-fieldset {
+  width: 27.25rem;
+  heihgt: 5.25rem;
+  margin-top: 2rem;
+}
+</style>

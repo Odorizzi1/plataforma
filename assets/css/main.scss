@@ -30,7 +30,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-rows: $navbar-height 1fr $footer-height;
+  grid-template-rows: $navbar-height 88% $footer-height;
   grid-template-areas: "nav" "content" "footer";
 }
 
@@ -42,15 +42,15 @@ body {
 }
 
 nav {
-  grid-are: nav;
+  grid-area: nav;
 }
 
 main {
-  grid-are: content;
+  grid-area: content;
 }
 
 footer {
-  grid-are: footer;
+  grid-area: footer;
 }
 
 .col-1 {

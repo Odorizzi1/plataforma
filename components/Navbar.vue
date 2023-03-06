@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="w-full h-full nav-grid">
+    <nav class="w-full h-full navbar">
       <nuxt-img src="/images/pescarte_logo.svg" class="logo" />
       <ul class="nav-menu">
         <li class="nav-item">
@@ -18,7 +18,9 @@
       </ul>
       <Button type="primary" class="login-button">
         <LogIn />
-        <Text size="btn">Acessar</Text>
+        <NuxtLink to="/acessar">
+          <Text size="btn">Acessar</Text>
+        </NuxtLink>
       </Button>
     </nav>
   </header>
@@ -29,9 +31,10 @@ import { ChevronDown, LogIn } from "lucide-vue-next";
 </script>
 
 <style lang="scss">
-.nav-grid {
+.navbar {
   @apply flex justify-between items-center;
-  @apply w-full;
+  @apply w-full border-black-10;
+  border-bottom-width: 1px;
 }
 
 .logo {

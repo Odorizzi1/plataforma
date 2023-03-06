@@ -1,5 +1,9 @@
 <template>
-  <button class="btn" :class="btnClass(type)">
+  <button
+    :type="submit ? 'submit' : 'button'"
+    class="btn"
+    :class="btnClass(type)"
+  >
     <slot />
   </button>
 </template>
@@ -7,7 +11,7 @@
 <script setup lang="ts">
 type Style = "primary" | "secondary";
 
-defineProps<{ type: Style }>();
+defineProps<{ type: Style; submit?: boolean }>();
 
 function btnClass(style: Style): string {
   return "btn".concat("-", style);

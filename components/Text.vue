@@ -18,11 +18,9 @@ interface Props {
   color: string;
 }
 
-withDefaults(defineProps<Props>(), { color: "black-80" });
+defineProps<Props>();
 
 function getTextStyle(size: Size, color: string): string {
-  const textColor = "text".concat("-", color);
-
   const textStyles = {
     h1: "text-3xl leading-10 font-bold",
     h2: "text-2xl leading-9 font-bold",
@@ -35,6 +33,6 @@ function getTextStyle(size: Size, color: string): string {
     sm: "text-xs leading-4 font-regular",
   };
 
-  return textColor.concat(" ", textStyles[size]);
+  return color.concat(" ", textStyles[size]);
 }
 </script>

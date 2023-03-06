@@ -4,21 +4,21 @@
       <nuxt-img src="/images/pescarte_logo.svg" class="logo" />
       <ul class="nav-menu">
         <li class="nav-item">
-          <Text size="h4" color="blue-100">Institucional</Text>
-          <ChevronDown />
+          <Text size="h4" color="text-blue-100">Institucional</Text>
+          <ChevronDown class="text-blue-100" />
         </li>
         <li class="nav-item">
-          <Text size="h4" color="blue-100">Pesquisa</Text>
-          <ChevronDown />
+          <Text size="h4" color="text-blue-100">Pesquisa</Text>
+          <ChevronDown class="text-blue-100" />
         </li>
         <li class="nav-item">
-          <Text size="h4" color="blue-100">Pesca</Text>
-          <ChevronDown />
+          <Text size="h4" color="text-blue-100">Pesca</Text>
+          <ChevronDown class="text-blue-100" />
         </li>
       </ul>
       <Button type="primary" class="login-button">
         <LogIn />
-        <Text size="btn" color="white-100">Acessar</Text>
+        <Text size="btn">Acessar</Text>
       </Button>
     </nav>
   </header>

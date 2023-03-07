@@ -2,7 +2,7 @@
   <input
     :class="{
       'input-error': !!errorMessage,
-      'input-default': isEmpty(inputvalue.value),
+      'input-default': isEmpty(inputvalue),
       'input-sucess': meta.valid,
       'input-warning': !meta.valid,
     }"

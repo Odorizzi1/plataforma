@@ -1,7 +1,7 @@
 <template>
   <main class="fish-bg h-full">
     <Form
-      @submit.prevent="handleSubmit"
+      @submit="handleSubmit"
       @invalid-submit="handleError"
       :validation-schema="schema"
       class="login-form whitespace-nowrap"
@@ -32,19 +32,50 @@ import { Form } from "vee-validate";
 import { toFormValidator } from "@vee-validate/zod";
 import { vMaska } from "maska";
 import { z } from "zod";
+import type { Login } from "@/types/auth";
 
 const schema = toFormValidator(
   z.object({
-    cpf: z.string().nonempty(),
-    password: z.string().nonempty().min(8),
+    cpf: z.string().min(1),
+    password: z.string().min(8),
   })
 );
 
-function handleSubmit(values) {
+const query = gql`
+  mutation Login($cpf: String!, $password: String!) {
+    login(cpf: $cpf, password: $password) {
+      token
+      user {
+        id
+        birthdate
+        firstName
+        middleName
+        lastName
+        cpf
+        role
+      }
+    }
+  }
+`;
+
+const { mutate: login } = useMutation<Login>(query, { clientId: "local" });
+
+async function handleSubmit(values: any): Promise<void> {
+  const { onLogin } = useApollo();
   const { cpf, password } = values;
+
+  const variables = { cpf, password };
+
+  const result = await login(variables);
+
+  console.log(result);
 }
 
-function handleError(e) {}
+function handleError(e: any) {
+  const { cpf, password } = e.errors;
+
+  // TODO use toasts to show errors!
+}
 </script>
 
 <style lang="scss">

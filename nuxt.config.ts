@@ -10,6 +10,9 @@ export default defineNuxtConfig({
       default: {
         httpEndpoint: "https://pescarte.uenf.br/api",
       },
+      local: {
+        httpEndpoint: "http://localhost:4000/api",
+      },
     },
   },
   components: true,

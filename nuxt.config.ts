@@ -18,7 +18,6 @@ export default defineNuxtConfig({
   components: true,
   css: ["@/assets/css/main.scss"],
   modules: [
-    "@pinia/nuxt",
     "@nuxtjs/apollo",
     "@nuxtjs/tailwindcss",
     "@nuxt/image-edge",

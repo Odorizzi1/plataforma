@@ -119,7 +119,7 @@ main {
 
 .login-fieldset {
   width: 27.25rem;
-  heihgt: 5.25rem;
+  height: 5.25rem;
   margin-top: 2rem;
 }
 </style>

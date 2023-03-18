@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-type Size = "h1" | "h2" | "h3" | "h4" | "h5" | "btn" | "lg" | "md" | "sm";
+type Size = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'btn' | 'lg' | 'md' | 'sm';
 
 interface Props {
   size: Size;
@@ -22,19 +22,19 @@ defineProps<Props>();
 
 function getTextStyle(size: Size, color?: string): string {
   const textStyles = {
-    h1: "text-3xl leading-10 font-bold",
-    h2: "text-2xl leading-9 font-bold",
-    h3: "text-xl leading-8 font-bold",
-    h4: "text-lg leading-7 font-medium",
-    h5: "text-base leading-4 font-medium",
-    btn: "text-base leading-4 font-medium",
-    lg: "text-lg leading-6 font-regular",
-    md: "text-sm leading-5 font-regular",
-    sm: "text-xs leading-4 font-regular",
+    h1: 'text-3xl leading-10 font-bold',
+    h2: 'text-2xl leading-9 font-bold',
+    h3: 'text-xl leading-8 font-bold',
+    h4: 'text-lg leading-7 font-medium',
+    h5: 'text-base leading-4 font-medium',
+    btn: 'text-base leading-4 font-medium',
+    lg: 'text-lg leading-6 font-regular',
+    md: 'text-sm leading-5 font-regular',
+    sm: 'text-xs leading-4 font-regular',
   };
 
   if (!color) return textStyles[size];
 
-  return color.concat(" ", textStyles[size]);
+  return color.concat(' ', textStyles[size]);
 }
 </script>

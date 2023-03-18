@@ -10,22 +10,22 @@
 </template>
 
 <script setup lang="ts">
-import { CheckCircle2, Info, XCircle } from "lucide-vue-next";
+import { CheckCircle2, Info, XCircle } from 'lucide-vue-next';
 
-type Toast = "success" | "error" | "warning";
+type Toast = 'success' | 'error' | 'warning';
 
 interface Props {
   type: Toast;
   message: string;
 }
 
-defineProps<Props>()
+defineProps<Props>();
 
 function applyBorderStyle(type: Toast): string {
-  if (type == "success") return "border-green-40";
-  if (type == "warning") return "border-yellow-40";
+  if (type == 'success') return 'border-green-40';
+  if (type == 'warning') return 'border-yellow-40';
 
-  return "border-red-40";
+  return 'border-red-40';
 }
 </script>
 

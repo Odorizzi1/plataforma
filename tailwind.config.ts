@@ -4,13 +4,13 @@ module.exports = {
     './layouts/**/*.vue',
     './pages/**/*.vue',
     './plugins/**/*.ts',
-    './nuxt.config.ts'
+    './nuxt.config.ts',
   ],
   theme: {
-    borderWith: {1: '1.5px'},
+    borderWith: { 1: '1.5px' },
     colors: {
       white: {
-        100:  '#fff',
+        100: '#fff',
         80: '#fafafa',
       },
       black: {
@@ -20,7 +20,7 @@ module.exports = {
         40: '#9f9f9f',
         20: '#cfcfcf',
         10: '#e7e7e7',
-        5: '#f3f3f3'
+        5: '#f3f3f3',
       },
       blue: {
         100: '#0064c8',
@@ -29,7 +29,7 @@ module.exports = {
         40: '#99c1e9',
         20: '#cce0f4',
         10: '#e5eff9',
-        5: '#f2f7fc'
+        5: '#f2f7fc',
       },
       orange: {
         100: '#ff6e00',
@@ -38,7 +38,7 @@ module.exports = {
         40: '#ffc599',
         20: '#ffe2cc',
         10: '#fff0e5',
-        5: '#fff8f2'
+        5: '#fff8f2',
       },
       green: {
         100: '#00b464',
@@ -47,7 +47,7 @@ module.exports = {
         40: '#99e1c1',
         20: '#ccf0e0',
         10: '#e5f7ef',
-        5: '#f2fbf7'
+        5: '#f2fbf7',
       },
       yellow: {
         100: '#ffc832',
@@ -56,7 +56,7 @@ module.exports = {
         40: '#ffe9ad',
         20: '#fff4d6',
         10: '#fff9eb',
-        5: '#fffcf5'
+        5: '#fffcf5',
       },
       red: {
         100: '#fa3232',
@@ -65,8 +65,8 @@ module.exports = {
         40: '#fdadad',
         20: '#fed6d6',
         10: '#ffebeb',
-        5: '#fff5f5'
-      }
+        5: '#fff5f5',
+      },
     },
     lineHeight: {
       10: '2.25rem',
@@ -84,17 +84,15 @@ module.exports = {
       lg: '1.25rem',
       xl: '1.5rem',
       '2xl': '2rem',
-      '3xl': '2.5rem'
+      '3xl': '2.5rem',
     },
     fontFamily: {
-      sans: ['Work Sans', 'sans-serif']
+      sans: ['Work Sans', 'sans-serif'],
     },
     container: {
-      center: true
+      center: true,
     },
     extend: {},
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ]
-}
+  plugins: [require('@tailwindcss/forms')],
+};

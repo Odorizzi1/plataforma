@@ -9,12 +9,12 @@
 </template>
 
 <script setup lang="ts">
-type Style = "primary" | "secondary";
+type Style = 'primary' | 'secondary' | 'link';
 
 defineProps<{ type: Style; submit?: boolean }>();
 
 function btnClass(style: Style): string {
-  return "btn".concat("-", style);
+  return 'btn'.concat('-', style);
 }
 </script>
 
@@ -57,9 +57,9 @@ function btnClass(style: Style): string {
     @apply border-blue-20;
     @apply text-blue-20;
   }
+}
 
-  .btn-link {
-    @apply text-blue-80 hover:underline decoration-blue-80;
-  }
+.btn-link {
+  @apply text-blue-80 hover:underline decoration-blue-80;
 }
 </style>

@@ -11,8 +11,7 @@
     @input="handleChange"
     @blur="handleBlur"
     :name="name"
-    :value="inputvalue"
-  />
+    :value="inputvalue" />
   <!-- <span class="dot" v-if="!isEmpty(inputvalue.value)">
        <Info v-if="!meta.valid" />
        <CheckCircle2 v-else-if="meta.valid" />
@@ -21,8 +20,8 @@
 </template>
 
 <script setup lang="ts">
-import { useField } from "vee-validate";
-import { CheckCircle2, Info, XCircle } from "lucide-vue-next";
+import { useField } from 'vee-validate';
+import { CheckCircle2, Info, XCircle } from 'lucide-vue-next';
 // import { vMaska } from "maska";
 
 interface Props {
@@ -34,10 +33,10 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  value: "",
+  value: '',
 });
 
-const name = toRef(props, "name");
+const name = toRef(props, 'name');
 
 const {
   value: inputvalue,

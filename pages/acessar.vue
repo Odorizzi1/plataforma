@@ -4,8 +4,7 @@
       @submit="handleSubmit"
       @invalid-submit="handleError"
       :validation-schema="schema"
-      class="login-form whitespace-nowrap"
-    >
+      class="login-form whitespace-nowrap">
       <Text size="h3" color="text-black-80">
         Faça login para acessar a plataforma
       </Text>
@@ -28,11 +27,11 @@
 </template>
 
 <script setup lang="ts">
-import { Form } from "vee-validate";
-import { toFormValidator } from "@vee-validate/zod";
-import { vMaska } from "maska";
-import { z } from "zod";
-import type { Login } from "@/types/auth";
+import { Form } from 'vee-validate';
+import { toFormValidator } from '@vee-validate/zod';
+import { vMaska } from 'maska';
+import { z } from 'zod';
+import type { Login } from '@/types/auth';
 
 const schema = toFormValidator(
   z.object({
@@ -58,7 +57,7 @@ const query = gql`
   }
 `;
 
-const { mutate: login } = useMutation<Login>(query, { clientId: "local" });
+const { mutate: login } = useMutation<Login>(query, { clientId: 'local' });
 
 async function handleSubmit(values: any): Promise<void> {
   const { onLogin } = useApollo();
@@ -84,7 +83,7 @@ main {
 }
 
 .fish-bg {
-  background-image: url("/images/fish_background.svg");
+  background-image: url('/images/fish_background.svg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

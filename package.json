@@ -5,9 +5,12 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
     "@vite-pwa/nuxt": "^0.0.6",
@@ -15,6 +18,7 @@
     "eslint": "^8.36.0",
     "eslint-plugin-functional": "^5.0.6",
     "eslint-plugin-vue": "^9.9.0",
+    "husky": "^8.0.3",
     "nuxt": "^3.2.3",
     "nuxt-lodash": "^2.4.1",
     "nuxt-purgecss": "^2.0.0",

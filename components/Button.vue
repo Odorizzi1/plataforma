@@ -2,8 +2,7 @@
   <button
     :type="submit ? 'submit' : 'button'"
     class="btn"
-    :class="btnClass(type)"
-  >
+    :class="btnClass(type)">
     <slot />
   </button>
 </template>

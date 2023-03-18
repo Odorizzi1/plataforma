@@ -14,7 +14,16 @@
     "plugin:functional/recommended",
     "plugin:functional/stylistic"
   ],
-  "overrides": [],
+  "overrides": [
+    {
+      "files": ["./**/*.spec.*", "./**/*.test.*"],
+      "plugins": ["vitest"],
+      "extends": ["plugin:functional/lite"],
+      "rules": {
+        "functional/no-return-void": "off"
+      }
+    }
+  ],
   "parser": "vue-eslint-parser",
   "parserOptions": {
     "parser": "@typescript-eslint/parser",
@@ -27,9 +36,12 @@
   "rules": {
     "no-undef": "off",
     "vue/multi-word-component-names": "off",
-    "functional/no-expression-statements": {
-      "ignoreVoid": true
-    },
+    "functional/no-expression-statements": [
+      "error",
+      {
+        "ignoreVoid": true
+      }
+    ],
     "vue/max-attributes-per-line": [
       "error",
       {

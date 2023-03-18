@@ -4,30 +4,22 @@
       <nuxt-img src="/images/pescarte_logo.svg" class="logo" />
       <ul class="nav-menu">
         <li class="nav-item">
-          <Text size="h4" color="text-blue-100">
-            Institucional
-          </Text>
+          <Text size="h4" color="text-blue-100"> Institucional </Text>
           <ChevronDown class="text-blue-100" />
         </li>
         <li class="nav-item">
-          <Text size="h4" color="text-blue-100">
-            Pesquisa
-          </Text>
+          <Text size="h4" color="text-blue-100"> Pesquisa </Text>
           <ChevronDown class="text-blue-100" />
         </li>
         <li class="nav-item">
-          <Text size="h4" color="text-blue-100">
-            Pesca
-          </Text>
+          <Text size="h4" color="text-blue-100"> Pesca </Text>
           <ChevronDown class="text-blue-100" />
         </li>
       </ul>
       <Button type="primary" class="login-button">
         <LogIn />
         <NuxtLink to="/acessar">
-          <Text size="btn">
-            Acessar
-          </Text>
+          <Text size="btn"> Acessar </Text>
         </NuxtLink>
       </Button>
     </nav>
@@ -38,33 +30,23 @@
         </li>
         <li class="nav-item">
           <Home />
-          <Text size="btn" color="text-black-60">
-            Home
-          </Text>
+          <Text size="btn" color="text-black-60"> Home </Text>
         </li>
         <li class="nav-item">
           <Users />
-          <Text size="btn" color="text-black-60">
-            Pesquisadores
-          </Text>
+          <Text size="btn" color="text-black-60"> Pesquisadores </Text>
         </li>
         <li class="nav-item">
           <FileText />
-          <Text size="btn" color="text-black-60">
-            Relatórios
-          </Text>
+          <Text size="btn" color="text-black-60"> Relatórios </Text>
         </li>
         <li class="nav-item">
           <CalendarDays />
-          <Text size="btn" color="text-black-60">
-            Agenda
-          </Text>
+          <Text size="btn" color="text-black-60"> Agenda </Text>
         </li>
         <li class="nav-item">
           <Mail />
-          <Text size="btn" color="text-black-60">
-            Mensagens
-          </Text>
+          <Text size="btn" color="text-black-60"> Mensagens </Text>
         </li>
       </ul>
     </nav>

@@ -1,0 +1,11 @@
+{
+  "semi": true,
+  "arrowParens": "avoid",
+  "bracketSameLine": true,
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "editorconfig": true,
+  "singleQuote": true,
+  "vueIndentScriptAndStyle": false,
+  "useTabs": false
+}

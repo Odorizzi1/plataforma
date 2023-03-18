@@ -1,0 +1,42 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/vue3-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:functional/external-vanilla-recommended",
+    "plugin:functional/recommended",
+    "plugin:functional/stylistic"
+  ],
+  "overrides": [],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./.nuxt/tsconfig.json",
+    "extraFileExtensions": [".vue"]
+  },
+  "plugins": ["vue", "@typescript-eslint", "functional"],
+  "rules": {
+    "no-undef": "off",
+    "vue/multi-word-component-names": "off",
+    "functional/no-expression-statements": {
+      "ignoreVoid": true
+    },
+    "vue/max-attributes-per-line": [
+      "error",
+      {
+        "singleline": {
+          "max": 3
+        }
+      }
+    ]
+  }
+}

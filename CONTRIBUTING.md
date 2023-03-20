@@ -4,7 +4,6 @@
 
 ### Tabela de conteúdos
 
-
 ## Demandas do projeto
 
 Atualmente estamos implementando uma plataforma web para o projeto Pescarte. A mesma foi dividida em 4 (quatro) módulos, inicialmente:
@@ -16,7 +15,7 @@ Atualmente estamos implementando uma plataforma web para o projeto Pescarte. A m
 
 ### Módulo Público
 
-Módulo que representa toda a parte pública da plataforma, onde será exibida as informações sobre os núcleos de pesquisa, linhas de pesquisa, as pessoas pesquisadoras que as formam. 
+Módulo que representa toda a parte pública da plataforma, onde será exibida as informações sobre os núcleos de pesquisa, linhas de pesquisa, as pessoas pesquisadoras que as formam.
 
 E tabém centralizar documentos do projeto como notícias, declarações e avisos. A plataforma também prevê uma "biblioteca" pública com as mídias do projeto (fotos e vídeos), que serão catalogadas por tags e podem ser recuperadas por meio de pesquisa textual.
 
@@ -34,7 +33,7 @@ Ainda dentro da parte privada, as pessoas pescadoras terão acesso a plataforma 
 
 ## Estado atual da plataforma
 
-Atualmente estamos implementando de forma concorrente a parte pública, que está tendo seus conteúdos ainda definidos e também a parte do *Módulo de Pesquisa*, onde já temos o layout e o design system pronto no Figma.
+Atualmente estamos implementando de forma concorrente a parte pública, que está tendo seus conteúdos ainda definidos e também a parte do _Módulo de Pesquisa_, onde já temos o layout e o design system pronto no Figma.
 
 ## Como contribuir?
 
@@ -45,7 +44,7 @@ Serão abertas issues de diferente escopos, como:
 - corrigir bugs de alguma tela existente
 - fazer integração com a API
 
-Em adição as issues, existem dois projetos do GitHub com as tarefas atuais, distribuídas num quadro estilo [Kaban](https://www.alura.com.br/artigos/metodo-kanban). 
+Em adição as issues, existem dois projetos do GitHub com as tarefas atuais, distribuídas num quadro estilo [Kaban](https://www.alura.com.br/artigos/metodo-kanban).
 
 Um projeto é específico para os componentes do Design System e o outro é um projeto para tarefas gerais da plataforma, incluindo correção de bugs e implementação de telas.
 

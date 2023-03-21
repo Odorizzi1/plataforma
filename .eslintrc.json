@@ -12,7 +12,8 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:functional/external-vanilla-recommended",
     "plugin:functional/recommended",
-    "plugin:functional/stylistic"
+    "plugin:functional/stylistic",
+    "prettier"
   ],
   "overrides": [
     {

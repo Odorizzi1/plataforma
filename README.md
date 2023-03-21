@@ -1,5 +1,9 @@
 # Plataforma PEA Pescarte
 
+[![lint](https://github.com/peapescarte/plataforma/actions/workflows/lint.yml/badge.svg)](https://github.com/peapescarte/plataforma/actions/workflows/lint.yml)
+
+[![test](https://github.com/peapescarte/plataforma/actions/workflows/test.yml/badge.svg)](https://github.com/peapescarte/plataforma/actions/workflows/test.yml)
+
 O _Projeto PESCARTE_ tem como sua principal finalidade a criação de uma rede social regional integrada por pescadores artesanais e por seus familiares, buscando, por meio de processos educativos, promover, fortalecer e aperfeiçoar a sua organização comunitária e a sua qualificação profissional, bem como o seu envolvimento na construção participativa e na implementação de projetos de geração de trabalho e renda.
 
 Por meio do Projeto PESCARTE as comunidades pesqueiras que vivem nos municípios de Arraial do Cabo, Cabo Frio, Macaé, Quissamã, Campos dos Goytacazes, São João da Barra e São Francisco de Itabapoana são mobilizadas, incentivadas e orientadas a participar de diferentes ações e/ou atividades de natureza educativa. São ações e/ou atividades, cuja realização tem como objetivos: aperfeiçoar a atuação profissional dessas comunidades, na perspectiva, seja da ampliação de sua produtividade, seja para poder melhor se organizar e realizar atividades econômicas solidárias.

@@ -1,17 +1,17 @@
 <template>
   <main class="fish-bg h-full">
     <Form
-      @submit="handleSubmit"
-      @invalid-submit="handleError"
+      class="login-form whitespace-nowrap"
       :validation-schema="schema"
-      class="login-form whitespace-nowrap">
+      @submit="handleSubmit"
+      @invalid-submit="handleError">
       <Text size="h3" color="text-black-80">
         Faça login para acessar a plataforma
       </Text>
 
       <fieldset class="login-fieldset">
         <label><Text size="h4" color="text-black-80">CPF</Text></label>
-        <Input type="text" name="cpf" v-maska data-maska="###.###.###-##" />
+        <Input v-maska type="text" name="cpf" data-maska="###.###.###-##" />
       </fieldset>
 
       <fieldset class="login-fieldset">
@@ -20,7 +20,7 @@
       </fieldset>
 
       <Button type="primary" submit>
-        <Text size="btn">Acessar</Text>
+        <Text size="btn"> Acessar </Text>
       </Button>
     </Form>
   </main>

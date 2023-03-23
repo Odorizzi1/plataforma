@@ -29,7 +29,7 @@
         <Text size="h2" color="text-black-80">
           {{ user?.firstName }}
         </Text>
-        <Text size="h4" color="text-black-80" class="uppercase">
+        <Text size="h4" color="text-black-80">
           {{ user?.pesquisador.bolsa }}
         </Text>
       </div>
@@ -42,7 +42,7 @@
       </div>
       <hr />
       <div class="links">
-        <Text size="lg" color="text-black-80" class="capitalize"> links </Text>
+        <Text size="lg" color="text-black-80"> links </Text>
         <ProfileLink :href="user?.pesquisador.linkLattes" label="Lattes">
           <FileText width="35" height="23" class="text-white-100" />
         </ProfileLink>

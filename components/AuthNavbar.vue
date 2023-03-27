@@ -1,6 +1,10 @@
 <template>
-  <header @mouseover="hover = true" @mouseleave="hover = false">
-    <nav class="h-full navbar authenticated" :class="{ open: hover }">
+  <header>
+    <nav
+      :class="{ open: hover }"
+      class="h-full navbar authenticated"
+      @mouseover="hover = true"
+      @mouseleave="hover = false">
       <ul class="nav-menu">
         <li class="nav-item">
           <nuxt-img v-if="!hover" src="/images/icon_logo.svg" class="logo" />
@@ -51,7 +55,7 @@ import {
   Mail,
 } from 'lucide-vue-next';
 
-const props = withDefaults(defineProps<{ hover?: boolean }>(), { hover: true });
+const hover = ref(false);
 </script>
 
 <style lang="scss">
@@ -60,10 +64,10 @@ const props = withDefaults(defineProps<{ hover?: boolean }>(), { hover: true });
   padding: 2.5rem;
   width: 8.75rem;
   overflow: hidden;
-  -webkit-transition: width 0.05s linear;
-  transition: width 0.1s linear;
+  transition: width 0.15s linear;
   transform: translateZ(0) scale(1, 1);
   border-right-width: 1px;
+  z-index: -10;
 
   .user-info {
     @apply flex justify-center;
@@ -88,7 +92,6 @@ const props = withDefaults(defineProps<{ hover?: boolean }>(), { hover: true });
 .navbar.authenticated.open {
   @apply bg-white-100;
 
-  z-index: 1000;
   width: 20rem;
 
   .user-info {

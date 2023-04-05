@@ -4,7 +4,6 @@ about: Sugere e descreve a implementação de uma nova tela, seguindo o layout d
 title: Implementar tela [TELA]
 labels: ''
 assignees: ''
-
 ---
 
 ## Descrição
@@ -16,4 +15,5 @@ assignees: ''
 <!-- screenshot do layout da tela no figma -->
 
 ## Link Úteis
+
 [Figma Layout](https://www.figma.com/file/PhkO37jz3ofCHwc1pHtPyz/PESCARTE?node-id=386%3A7639&t=StgXX0fySXdj72Oo-1)

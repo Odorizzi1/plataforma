@@ -11,7 +11,9 @@
     "postinstall": "nuxt prepare",
     "prepare": "husky install",
     "commit": "git-cz",
-    "test": "vitest --run"
+    "test": "vitest --run",
+    "format": "prettier -w --config ./.prettierrc.json --ignore-path ./.prettierignore .",
+    "lint": "eslint -c ./.eslintrc.json --ignore-path ./.eslintignore ."
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
@@ -42,7 +44,7 @@
     "vitest": "^0.29.3"
   },
   "dependencies": {
-    "@nuxt/image-edge": "^1.0.0-27954023.4cee565",
+    "@nuxt/image-edge": "^1.0.0-27991759.1a5eea1",
     "@nuxtjs/apollo": "^5.0.0-alpha.5",
     "@nuxtjs/google-fonts": "^2.0.0",
     "@nuxtjs/style-resources": "^1.2.1",
@@ -50,7 +52,8 @@
     "@pinia/nuxt": "^0.4.7",
     "@tailwindcss/forms": "^0.5.3",
     "@vee-validate/zod": "^4.7.4",
-    "lucide-vue-next": "^0.121.0",
+    "@vue/apollo-composable": "^4.0.0-beta.4",
+    "lucide-vue-next": "^0.128.0",
     "magic-regexp": "^0.6.3",
     "maska": "^2.1.7",
     "prettier": "^2.8.4",

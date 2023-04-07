@@ -48,30 +48,9 @@ Em adição as issues, existem dois projetos do GitHub com as tarefas atuais, di
 
 Um projeto é específico para os componentes do Design System e o outro é um projeto para tarefas gerais da plataforma, incluindo correção de bugs e implementação de telas.
 
-### Setup do projeto
-
-#### Requisitos
-
-- [NodeJS](https://nodejs.org/en)
-- [Nix](https://nixos.org/) (opcional)
-
-#### Primeira vez rodando
-
-Para instalar as dependências:
-
-```sh dark
-$ npm install
-```
-
-E para levantar o projeto:
-
-```sh dark
-$ npm run dev
-```
-
 ### Passos para pegar uma tarefa
 
-Após encontrar uma tarefa do seu interesse, adicione um comentário na issue da mesma, informando que irá trabalhar nela!
+Após encontrar uma tarefa do seu interesse na seção de [issues](https://github.com/peapescarte/pescarte-plataforma/issues), adicione um comentário na issue da mesma, informando que irá trabalhar nela!
 
 Crie uma branch no formato `<user-github>/tarefa`, exemplo:
 
@@ -94,3 +73,43 @@ Lembre-se que é que não é obrigatório testes unitários para uma PR ser aber
 - [Documentação Vue 3](https://vuejs.org/guide/introduction.html)
 - [Documentação Nuxt.JS 3](https://nuxt.com/docs)
 - [Documentação TailwindCSS](https://tailwindcss.com/docs)
+
+## Links para estudo (frontend)
+
+- [História do frontend (pt-br)](https://youtu.be/VKmPGmFY7H4)
+- [frontend, por onde começar? (pt-br)](https://www.youtube.com/watch?v=Ab-kGzlCCWI)
+- [Tutorial CSS desde o início (pt-br)](https://www.maujor.com/tutorial/joe/cssjoe1.php)
+- [Tutoriais e documentação oficial CSS (en)](https://www.w3schools.com/css/)
+- [Tutoriais para CSS (pt-br)](https://www.oficinadanet.com.br/css/tutoriais)
+- [Tutorial de CSS para inciantes (pt-br)](https://terminalroot.com.br/css/)
+- [Tutorial Básico HTML e CSS (pt-br)](https://www.youtube.com/watch?v=4Gq3WW6FwVA)
+- [Curso de HTML e CSS para iniciantes (pt-br)](https://www.youtube.com/watch?v=iZ1ucWosOww)
+- [Aprenda HTML em 1 hora (en)](https://www.youtube.com/watch?v=qz0aGYrrlhU)
+- [Criando uma loja virtual com HTML e CSS puro (pt-br)](https://www.youtube.com/watch?v=eKi3UlBZEXI)
+- [Tutorial para iniciantes HTML e CSS (pt-br)](https://www.youtube.com/watch?v=6b_bnNFNLng)
+- [Curso completo frontend (pt-br)](https://www.youtube.com/watch?v=j_lSgjAODos&list=PLMy95_4XE08MRsQvaSQnHzyooNevGTNtS)
+- [Roadmap para estudo frontend (en)](https://roadmap.sh/frontend)
+- [Curso de HTML e CSS (pt-br)](https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n)
+- [Curso HTML, CSS e JS (pt-br)](https://www.youtube.com/watch?v=EiZbhsVY2Dk&list=PLwgL9IEA0PxUjbhob9UMdpVq12sGrjgU6)
+- [Curso HTML e CSS completo (pt-br)](https://www.youtube.com/watch?v=bCFTv8a59PE&list=PLbIBj8vQhvm00J3f3rD33tRuNLem8EgEA)
+- [Documentação oficial para web dev (en)](https://developer.mozilla.org/en-US/)
+- [Guia de sobrevivência JavaScript moderno (pt-br)](https://www.youtube.com/watch?v=P9xBhwugj4M)
+- [Curso JavaScript moderno (pt-br)](https://www.youtube.com/watch?v=RtfBx90R070&list=PLlAbYrWSYTiPQ1BE8klOtheBC0mtL3hEi)
+- [Curso JavaScript - curso em vídeo (pt-br)](https://www.youtube.com/watch?v=BXqUH86F-kA&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm)
+- [JavaScript assíncrono (pt-br)](https://www.youtube.com/watch?v=7Bs4-rqbCQc)
+- [JavaScript ES6 e programação funcional (pt-br)](https://www.youtube.com/watch?v=LQbAozIe1DA)
+- [Tutorial JavaScript ES6](https://www.javascripttutorial.net/es6/)
+- [Fundamentos do JavaScript funcional (pt-br)](https://www.youtube.com/watch?v=W3f6hiTLipc)
+- [Entenda Promises por uma vez por todas (pt-br)](https://medium.com/trainingcenter/entendendo-promises-de-uma-vez-por-todas-32442ec725c2)
+- [Documentação oficial TypeScript (en)](https://www.typescriptlang.org/docs/)
+- [Typescript para novas pessoas programadoras (en)](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html)
+- [Guia TypeScript para iniciantes (en)](https://www.freecodecamp.org/news/learn-typescript-beginners-guide/)
+- [Tutorial de javascript moderno (en)](https://javascript.info/)
+- [Typescript in 4 hours - use mais como referência, n precisa assistir tudo de uma vez (en)](https://www.youtube.com/watch?v=30LWjhZzg50)
+- [Progrmação funcional com JavaScript (en)](https://www.youtube.com/watch?v=BMUiFMZr7vk&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
+- [Aprenda programação funcional com JavaScript (en)](https://www.youtube.com/watch?v=R_-nUkpatwM)
+- [Curso de Vue3 (pt-br)](https://www.youtube.com/watch?v=wsAQQioPIJs&list=PLnDvRpP8BnezDglaAvtWgQXzsOmXUuRHL)
+- [Curso Vue.JS 3 (pt-br)](https://www.youtube.com/watch?v=9DRY-aNPta0&list=PLcoYAcR89n-qTYqfWTGxXMnAvCqY3JF8w)
+- [Tutorial completo Vue.JS 3 (en)](https://www.youtube.com/watch?v=I_xLMmNeLDY)
+- [Curso Nuxt.JS 3 (en)](https://www.youtube.com/watch?v=GBdO5myZNsQ&list=PL4cUxeGkcC9haQlqdCQyYmL_27TesCGPC)
+- [Curso Nuxt.JS completo (en)](https://www.youtube.com/watch?v=ww94Jvi8JJo)

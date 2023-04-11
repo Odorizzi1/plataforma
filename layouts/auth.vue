@@ -1,6 +1,6 @@
 <template>
   <div class="auth-grid">
-    <Navbar />
+    <AuthNavbar />
     <slot />
     <Footer />
   </div>
